@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Js_Event Methods </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("p1").dblclick(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#p2").mouseenter(function () {
+                alert("You entered p2!");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#p3").mouseleave(function () {
+                alert("Bye! you now leave p3.");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#p4").mousedown(function () {
+                alert("Mouse down over p4!");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#p5").mouseup(function () {
+                alert("Mouse down over p5");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#p6").hover(function () {
+                alert("You entered p6!");
+            },
+                function () {
+                    alert("Bye! You now leave p6!");
+                });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h3>1. click_method()</h3>
+    <p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+    <hr>
+
+    <h3>2. dblclick_method() (doubleclick_method)</h3>
+    <p1>If you doubleclick on me, I will disappear.</p1><br><br>
+    <p1>Click me too!</p1><br><br>
+    <hr>
+
+    <h3>3. mouseenter_method() </h3>
+    <p2 id="p2">Click on the text.</p2>
+    <hr>
+
+    <h3>4. mouseleave_method() </h3>
+    <p3 id="p3">Click on the text.</p3>
+    <hr>
+
+    <h3>5. mousedown_method() </h3>
+    <p4 id="p4">Click on the text.</p4>
+    <hr>
+
+    <h3>6. mouseup_method() </h3>
+    <p5 id="p5">Click on the text.</p5>
+    <hr>
+
+    <h3>7. hover_method() </h3>
+    <p6 id="p6">Click on the text.</p6>
+    <hr>
+
+</body>
+</html>

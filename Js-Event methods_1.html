@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Js_Event Methods_1 </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("input").focus(function () {
+                $(this).css("background-color", "powderblue");
+            });
+            $("input").blur(function () {
+                $(this).css("background-color", "gray");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("p").on({
+                mouseenter: function () {
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function () {
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function () {
+                    $(this).css("background-color", "lightpink");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h3>Focus() and Blur() event methods</h3>
+    Name: <input type="text" name="fullname"><br><br>
+    Email: <input type="text" name="email"><br><br>
+    <input type="button" value="Submit">
+    <hr>
+
+    <h3>The on() Method</h3>
+    <p>Click or move the mouse pointer over this paragraph.</p>
+
+</body>
+</html>
