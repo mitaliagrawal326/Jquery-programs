@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jquery-Events</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("p").hide();
+            });
+            $("#show").click(function () {
+                $("p").show();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#click").click(function () {
+                $("p1").hide(2000);
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                $("p2").toggle();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".toggle").click(function () {
+                $("p3").toggle(3000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h3>Jquery hide() and show() methods</h3>
+    <p>If you click on the "Hide" button, I will disappear.</p>
+    <p>If you click on the "Show" button, I will again appear.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <hr>
+
+    <h3>Jquery hide() method with speed parameter</h3>
+    <button id="click">Hide</button><br><br>
+    <p1>If you click on the "Hide" button, I will slowly disappear the text.</p1>
+    <hr>
+
+    <h3>Jquery toggle() method </h3>
+    <button id="toggle">Toggle between hiding and showing the paragraphs</button>
+    <br><br>
+    <p2>Toggle can do both hide and show the content.</p2><br>
+    <hr>
+
+    <h3>Jquery toggle() method </h3>
+    <button class="toggle">Toggle between hiding and showing the paragraphs</button>
+    <br><br>
+    <p3>If you click on the "Toggle" button, I will slowly disappear and appear the text.</p3><br>
+
+</body>
+
+</html>
