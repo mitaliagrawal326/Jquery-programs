@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jquery_chaining method</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+  });
+});
+</script>
+</head>
+
+<body>
+<h3>Jquery chaining() method</h3>
+<p id="p1">jQuery is fun!!</p>
+
+<button>Click on me</button>
+
+</body>
+</html>
