@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jquery calling method</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $(".p1").hide("slow", function(){
+      alert("The paragraph is now hidden");
+    });
+  });
+});
+</script>
+
+<script>
+    $(document).ready(function(){
+      $("#btn1").click(function(){
+        $(".p2").hide(5000);
+        alert("The paragraph is now hidden");
+      });
+    });
+    </script>
+</head>
+
+<body>
+<h3>Jquery calling() method</h3>
+
+<button id="btn">Hide</button>
+<p class="p1">This is a paragraph with little content.</p>
+<hr>
+
+<button id="btn1">Hide</button>
+<p class="p2">This is a paragraph with speed parameter being applied on it.</p>
+<div>In this program, first alert popup is shown and after then the content is hidhing slowly.</div>
+
+</body>
+</html>
